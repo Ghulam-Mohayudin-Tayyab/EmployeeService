@@ -39,17 +39,17 @@ namespace EmployeeService.Controllers
                  return dbContext.Employees.ToList();
              }
          }
-        /* public Employee Get(int id)
+         public Employee Get(int id)
          {
              if (id == 0)
              {
                  throw new ArgumentException("Invalid ID.", nameof(id));
              }
-             using (WEBAPI_DBEntities1 dbcontext = new WEBAPI_DBEntities1())
-             {
-                 return dbcontext.Employees.FirstOrDefault(e => e.ID == id);
-             }
-         } */
+            using (WEBAPI_DBEntities1 dbcontext = new WEBAPI_DBEntities1())
+            {
+                return dbcontext.Employees.FirstOrDefault(e => e.ID == id);
+            }
+         } 
 
         /* public HttpResponseMessage Post([FromBody] Employee employee)
          {
